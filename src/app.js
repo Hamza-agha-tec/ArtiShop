@@ -33,7 +33,7 @@ function createApp() {
     }
     res.json(product);
   });
-
+//hi im here
   // Contenu du panier avec le total
   function cartSummary() {
     const items = [...cart.entries()].map(([productId, quantity]) => {
