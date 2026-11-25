@@ -57,7 +57,7 @@ const products = [
     stock: 12,
     description: "Babouches en cuir brodé main, semelle souple."
   }, {
-    id: 7,
+    id: 8,
     name: "Pouf en cuir de Marrakech",
     category: "Maroquinerie",
     price: 350,
