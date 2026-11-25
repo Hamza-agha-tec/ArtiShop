@@ -36,6 +36,12 @@ function createApp() {
     res.json(result);
   });
 
+  // Recherche : /api/products/search?q=tapis
+  app.get("/api/products/search", (req, res) => {
+    const q = (req.query.q || "").toLowerCase();
+    res.json(products.filter((p) => p.name.toLowerCase().includes(q)));
+  });
+
   // Fiche produit
   app.get("/api/products/:id", (req, res) => {
     const product = products.find((p) => p.id === Number(req.params.id));
